@@ -3,15 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Talwind css file link -->
+    <!-- Fontasweem cdn file link -->
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Talwindcss cdn file link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Css File Link -->
      <link rel="stylesheet" href="Styles/style.css">
-    
     <title>Assignment5</title>
 </head>
 <body>
-    
+    <header class="bg-[#FFFFFF]">
+        <nav class="flex justify-between items-center px-10 py-2">
+            <div class="nav_left flex gap-2 items-center">
+                <div class="logo">
+                    <img class="w-[50px]" src="Images/logo.png" alt="">
+                </div>
+                <div class="logo_doco">
+                    <p class="text-[#006747] text-lg  font-bold">Emergency</p>
+                    <p class="text-[#006747] text-lg  font-bold">Service </p>
+                </div>
+            </div>
+            
+            <div class="nav_right flex items-center gap-5">
+                <div class="hard flex items-center gap-2 bg-[#ECFFF0] w-[80px] py-[8px] px-[12px] rounded-4xl">
+                    <p id="love_count" class="font-bold">0</p>
+                    <img class="w-[30px]" src="Images/heart.png" alt="">
+                </div>
+                <div class="coin flex items-center gap-2 bg-[#ECFFF0] w-[80px] py-[8px] px-[9px] rounded-4xl">
+                    <p class="font-bold">100</p>
+                    <img class="w-[30px]" src="Images/coin.png" alt="">
+                </div>
+                <div class="nav_button py-[8px] px-[20px] bg-[#00A63E] text-white rounded-4xl">
+                    <button>2Copy</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section class="banner bg-gradient-to-l from-[#013223] via-[#006747] to-[#013223]">
+            <img class="w-[92px] mx-auto pt-5" src="Images/logo-dark.png" alt="">
+            <div class="banner_doco">
+                <h1 class="text-[40px] text-center font-bold text-white">Emergency Service Directory</h1>
+                <p class="text-white text-center font-semibold mt-2 pb-10">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            </div>
+
+        </section>
+    </header>
+    <main>
+        <section class="main flex gap-4 px-10 bg-[#eff5ef]">
+            <div class="main_left w-3/4 h-[500px]">
+                <div class="card_container mt-8">
+                    <!-- National Emergency card -->
+                    <div class="card bg-white w-[436px] p-[30px] rounded-lg">
+                        <div class="card_icon flex justify-between items-center">
+                            <img class="w-[60px]" src="Images/emergency.png" alt="">
+                            <div class=""><i class="heard_btn fa-regular fa-heart text-[24px] text-gray-500"></i></div>
+                        </div>
+                        <h1 class="font-bold text-[24px] mt-3">National Emergency Number</h1>
+                        <p class="text-[18px] text-[#5C5C5C] mt-2">National Emergency</p>
+                        <h1 class="font-bold text-3xl mt-5">999</h1>
+                        <button class=" mt-2 text-[#5C5C5C] bg-[#F2F2F2] py-1 px-3 rounded-xl">All</button>
+                        <div class="flex justify-between gap-3 mt-7">
+                            <button class="border-1 border-gray-500 w-[50%] rounded-lg p-2"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> <span class="text-[#5C5C5C]">Copy</span></button>
+                            <button class="bg-[#00A63E] w-[50%] rounded-lg p-2"><i class="fa-solid fa-phone text-white rotate-30"></i> <span class="text-[#ffffff]">Copy</span></button>
+                        </div>
+                    </div>
+
+                    <!-- Police Helpline card -->
+                    <div class="card bg-white w-[436px] p-[30px] rounded-lg">
+                        <div class="card_icon flex justify-between items-center">
+                            <img class="w-[60px]" src="Images/emergency.png" alt="">
+                            <div class=""><i class="heard_btn fa-regular fa-heart text-[24px] text-gray-500"></i></div>
+                        </div>
+                        <h1 class="font-bold text-[24px] mt-3">National Emergency Number</h1>
+                        <p class="text-[18px] text-[#5C5C5C] mt-2">National Emergency</p>
+                        <h1 class="font-bold text-3xl mt-5">999</h1>
+                        <button class=" mt-2 text-[#5C5C5C] bg-[#F2F2F2] py-1 px-3 rounded-xl">All</button>
+                        <div class="flex justify-between gap-3 mt-7">
+                            <button class="border-1 border-gray-500 w-[50%] rounded-lg p-2"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> <span class="text-[#5C5C5C]">Copy</span></button>
+                            <button class="bg-[#00A63E] w-[50%] rounded-lg p-2"><i class="fa-solid fa-phone text-white rotate-30"></i> <span class="text-[#ffffff]">Copy</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right w-1/4 bg-white h-500px mt-8">
+               <div class="call_history flex justify-between items-center p-[30px]">
+                   <h3><i class="fa-regular fa-clock text-[18px] text-[#5C5C5C]"></i> <span class="font-bold text-[20px]">Call History</span></h3> 
+                    <div>
+                        <button class="bg-[#00A63E] text-white text-[18px] rounded-3xl py-2 px-6">Clear</button>
+                    </div>
+                </div>
+                <div class="history mx-[30px] p-2 rounded-lg bg-[#FAFAFA]">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h2 class="font-bold">Fire Service Number</h2>
+                            <h2 class="font-bold text-[#5C5C5C]">999</h2>
+                        </div>
+                        <p class="font-semibold">11:36:58 AM</p>
+                    </div>   
+                </div>
+
+                <div class="mt-4 history mx-[30px] p-2 rounded-lg bg-[#FAFAFA]">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h2 class="font-bold">Fire Service Number</h2>
+                            <h2 class="font-bold text-[#5C5C5C]">999</h2>
+                        </div>
+                        <p class="font-semibold">11:36:58 AM</p>
+                    </div>   
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 
