@@ -33,11 +33,11 @@
                     <img class="w-[30px]" src="Images/heart.png" alt="">
                 </div>
                 <div class="coin flex items-center gap-2 bg-[#ECFFF0] w-[80px] py-[8px] px-[9px] rounded-4xl">
-                    <p class="font-bold">100</p>
+                    <p id="coin" class="font-bold">100</p>
                     <img class="w-[30px]" src="Images/coin.png" alt="">
                 </div>
                 <div class="nav_button py-[8px] px-[20px] bg-[#00A63E] text-white rounded-4xl">
-                    <button>2Copy</button>
+                    <button><span id="copy_count">0 </span>Copy</button>
                 </div>
             </div>
         </nav>
@@ -53,7 +53,7 @@
     </header>
     <main>
         <section class="main flex gap-4 px-10 bg-[#eff5ef]">
-            <div class="main_left w-3/4 h-[500px]">
+            <div class="main_left w-3/4">
                 <div class="card_container mt-8">
                     <!-- National Emergency card -->
                     <div class="card bg-white w-[436px] p-[30px] rounded-lg">
@@ -63,65 +63,44 @@
                         </div>
                         <h1 class="font-bold text-[24px] mt-3">National Emergency Number</h1>
                         <p class="text-[18px] text-[#5C5C5C] mt-2">National Emergency</p>
-                        <h1 class="font-bold text-3xl mt-5">999</h1>
+                        <h1 class="font-bold text-3xl mt-5 service_number">999</h1>
                         <button class=" mt-2 text-[#5C5C5C] bg-[#F2F2F2] py-1 px-3 rounded-xl">All</button>
                         <div class="flex justify-between gap-3 mt-7">
-                            <button class="border-1 border-gray-500 w-[50%] rounded-lg p-2"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> <span class="text-[#5C5C5C]">Copy</span></button>
-                            <button class="bg-[#00A63E] w-[50%] rounded-lg p-2"><i class="fa-solid fa-phone text-white rotate-30"></i> <span class="text-[#ffffff]">Copy</span></button>
+                            <button class="copy_button border-1 border-gray-500 w-[50%] rounded-lg p-2"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> <span class="text-[#5C5C5C]">Copy</span></button>
+                            <button id="national_emergency_call_btn" class="bg-[#00A63E] w-[50%] rounded-lg p-2"><i class="fa-solid fa-phone text-white rotate-30"></i> <span class="text-[#ffffff]">Call</span></button>
                         </div>
                     </div>
 
                     <!-- Police Helpline card -->
                     <div class="card bg-white w-[436px] p-[30px] rounded-lg">
                         <div class="card_icon flex justify-between items-center">
-                            <img class="w-[60px]" src="Images/emergency.png" alt="">
+                            <img class="w-[60px]" src="Images/police.png" alt="">
                             <div class=""><i class="heard_btn fa-regular fa-heart text-[24px] text-gray-500"></i></div>
                         </div>
-                        <h1 class="font-bold text-[24px] mt-3">National Emergency Number</h1>
-                        <p class="text-[18px] text-[#5C5C5C] mt-2">National Emergency</p>
-                        <h1 class="font-bold text-3xl mt-5">999</h1>
+                        <h1 class="font-bold text-[24px] mt-3">Police Helpline Number</h1>
+                        <p class="text-[18px] text-[#5C5C5C] mt-2">Police</p>
+                        <h1 class="font-bold text-3xl mt-5 service_number">999</h1>
                         <button class=" mt-2 text-[#5C5C5C] bg-[#F2F2F2] py-1 px-3 rounded-xl">All</button>
                         <div class="flex justify-between gap-3 mt-7">
-                            <button class="border-1 border-gray-500 w-[50%] rounded-lg p-2"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> <span class="text-[#5C5C5C]">Copy</span></button>
-                            <button class="bg-[#00A63E] w-[50%] rounded-lg p-2"><i class="fa-solid fa-phone text-white rotate-30"></i> <span class="text-[#ffffff]">Copy</span></button>
+                            <button class="copy_button border-1 border-gray-500 w-[50%] rounded-lg p-2"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> <span class="text-[#5C5C5C]">Copy</span></button>
+                            <button id="police_helpline_btn" class="bg-[#00A63E] w-[50%] rounded-lg p-2"><i class="fa-solid fa-phone text-white rotate-30"></i> <span class="text-[#ffffff]">Call</span></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main-right w-1/4 bg-white h-500px mt-8">
+            <!-- Main right site  -->
+            <div class="main-right w-1/4 bg-white mt-8">
                <div class="call_history flex justify-between items-center p-[30px]">
                    <h3><i class="fa-regular fa-clock text-[18px] text-[#5C5C5C]"></i> <span class="font-bold text-[20px]">Call History</span></h3> 
                     <div>
-                        <button class="bg-[#00A63E] text-white text-[18px] rounded-3xl py-2 px-6">Clear</button>
+                        <button id="call_history_clear_btn" class="bg-[#00A63E] text-white text-[18px] rounded-3xl py-2 px-6">Clear</button>
                     </div>
                 </div>
-                <div class="history mx-[30px] p-2 rounded-lg bg-[#FAFAFA]">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <h2 class="font-bold">Fire Service Number</h2>
-                            <h2 class="font-bold text-[#5C5C5C]">999</h2>
-                        </div>
-                        <p class="font-semibold">11:36:58 AM</p>
-                    </div>   
-                </div>
+                <div id="call_history_container">
 
-                <div class="mt-4 history mx-[30px] p-2 rounded-lg bg-[#FAFAFA]">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <h2 class="font-bold">Fire Service Number</h2>
-                            <h2 class="font-bold text-[#5C5C5C]">999</h2>
-                        </div>
-                        <p class="font-semibold">11:36:58 AM</p>
-                    </div>   
                 </div>
-            </div>
         </section>
     </main>
-
-
-
-
-
 
 <!-- Js File Link -->
  <script src="Js/script.js"></script>
