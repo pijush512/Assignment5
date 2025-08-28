@@ -16,7 +16,7 @@
 </head>
 <body>
     <header class="bg-[#FFFFFF]">
-        <nav class="flex justify-between items-center px-10 py-2">
+        <nav class="flex flex-col md:flex-row justify-between items-center md:px-10 py-2">
             <div class="nav_left flex gap-2 items-center">
                 <div class="logo">
                     <img class="w-[50px]" src="Images/logo.png" alt="">
@@ -52,9 +52,9 @@
         </section>
     </header>
     <main>
-        <section class="main flex gap-4 px-10 bg-[#eff5ef] pb-10  ">
-            <div class="main_left w-3/4">
-                <div class="card_container mt-8 grid grid-cols-3 gap-4 ">
+        <section class="main flex flex-col lg:flex-row gap-4 px-10 bg-[#eff5ef] pb-10  ">
+            <div class="main_left w-full lg:w-3/4">
+                <div class="card_container mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
                     <!-- National Emergency card -->
                     <div class="card bg-white   p-[30px] rounded-lg">
                         <div class="card_icon flex justify-between items-center">
@@ -202,7 +202,7 @@
                 </div>
             </div>
             <!-- Main right site  -->
-            <div class="main-right w-1/4 bg-white mt-8">
+            <div class="main-right w-full lg:w-1/4 bg-white mt-8">
                <div class="call_history flex justify-between items-center p-[30px]">
                    <h3><i class="fa-regular fa-clock text-[18px] text-[#5C5C5C]"></i> <span class="font-bold text-[20px]">Call History</span></h3> 
                     <div>
@@ -212,6 +212,7 @@
                 <div id="call_history_container">
 
                 </div>
+            </div>
         </section>
     </main>
 
